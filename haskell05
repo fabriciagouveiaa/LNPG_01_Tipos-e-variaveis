@@ -1,0 +1,14 @@
+main = do
+    putStrLn "Digite a primeira nota e seu peso:"
+    nota1 <- readLn
+    peso1 <- readLn
+    putStrLn "Digite a segunda nota e seu peso:"
+    nota2 <- readLn
+    peso2 <- readLn
+    putStrLn "Digite a terceira nota e seu peso:"
+    nota3 <- readLn
+    peso3 <- readLn
+
+    let media = (nota1 * fromIntegral peso1 + nota2 * fromIntegral peso2 + nota3 * fromIntegral peso3) / fromIntegral(peso1 + peso2 + peso3)
+
+    putStrLn $ "Média ponderada: " ++ show media
