@@ -1,0 +1,7 @@
+main = do
+    putStrLn "Digite a temperatura em Celsius:"
+    celsius <- readLn
+
+    let fahrenheit = (celsius * 9 / 5) + 32
+
+    putStrLn $ "Temperatura em Fahrenheit: " ++ show fahrenheit
