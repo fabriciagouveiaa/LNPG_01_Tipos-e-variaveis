@@ -1,0 +1,7 @@
+main = do
+    putStrLn "Digite sua idade:"
+    idade <- readLn
+
+    if idade >= 18
+        then putStrLn "Você é maior de idade."
+        else putStrLn "Você é menor de idade."
